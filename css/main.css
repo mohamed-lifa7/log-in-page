@@ -1,0 +1,241 @@
+/* start variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #60495a;
+    --secondary-color: #3f3244;
+    --black: #2f2235;
+    --grey: #bfc3ba;
+    --paragraph-color: #444;
+    --section-pad: 25px;
+    --main-duration: .3s;
+    --image-size: 300px;
+
+}
+
+/* start global rules  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screens  */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screens  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screens  */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+    height: 100vh;
+}
+
+.content form h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.content form .form-group {
+    padding: 20px 30px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin-bottom: 20px;
+}
+
+.content form .form-group input {
+    width: 90%;
+}
+
+.fa-eye,
+.fa-eye-slash {
+    cursor: pointer;
+}
+
+.fa-eye-slash {
+    display: none;
+}
+
+.login-button {
+    appearance: none;
+    background-color: var(--secondary-color);
+    border-width: 0;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 50px auto;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.login-button:before {
+    border-radius: 30px;
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: var(--primary-color);
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.login-button:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.login-button:after {
+    background-color: #FFF;
+}
+
+.login-button span {
+    z-index: 1;
+    position: relative;
+    letter-spacing: 5px;
+}
+
+
+.content .alt-action {
+    width: 300px;
+    text-align: center;
+}
+
+.content .alt-action p a {
+    color: var(--secondary-color);
+}
+
+.content .alt-action p a:hover {
+    color: var(--black);
+}
+
+.content .alt-action .or {
+    display: block;
+    margin: 5px 0;
+    height: 30px;
+    position: relative;
+}
+
+.content .alt-action .or::before {
+    content: 'OR';
+    position: absolute;
+    background-color: #FFF;
+    bottom: 50%;
+    height: 10px;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 50px;
+    left: 50%;
+}
+
+.content .alt-action .or::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    bottom: 50%;
+    left: 0;
+    z-index: -1;
+}
+
+.content .microsoft,
+.content .google {
+    position: relative;
+    border: 1px solid var(--grey);
+    margin: 10px auto;
+}
+
+
+.content .microsoft button,
+.content .google button {
+    width: 300px;
+    background-color: #FFF;
+    padding: 20px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.content .microsoft button:hover,
+.content .google button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.content .microsoft button img,
+.content .google button img {
+    position: absolute;
+    left: 10px;
+}
+
+.content .microsoft button span,
+.content .google button span {
+    text-align: center;
+}

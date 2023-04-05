@@ -16,7 +16,7 @@ Technologies Used
 
 ## Usage
 
-1. Clone or download the project files.
+1- Clone or download the project files.
 2. Open the index.html file in a web browser.
 3. Test the login page on different devices or screen sizes to see the responsive design in action.
 

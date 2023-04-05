@@ -3,22 +3,22 @@
 This is a simple and modern login page designed to practice responsive web design. It includes a form for users to input their email and password, and options to log in with Microsoft or Google accounts.
 Technologies Used
 
-  HTML
-  CSS
-  JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Dependencies
 
-  normalize.css: A CSS reset file to normalize styles across different browsers.
-  all.min.css: A CSS file containing font icons from the Font Awesome library.
-  main.css: A custom CSS file for styling the login page.
-  main.js: A JavaScript file for handling interactions and events on the login page.
+- normalize.css: A CSS reset file to normalize styles across different browsers.
+- all.min.css: A CSS file containing font icons from the Font Awesome library.
+- main.css: A custom CSS file for styling the login page.
+- main.js: A JavaScript file for handling interactions and events on the login page.
 
 ## Usage
 
-  Clone or download the project files.
-  Open the index.html file in a web browser.
-  Test the login page on different devices or screen sizes to see the responsive design in action.
+1. Clone or download the project files.
+2. Open the index.html file in a web browser.
+3. Test the login page on different devices or screen sizes to see the responsive design in action.
 
 ## Credits
 
